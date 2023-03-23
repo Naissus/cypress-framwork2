@@ -1,0 +1,30 @@
+{
+  "name": "cypress-framwork2",
+  "version": "1.0.0",
+  "description": "Cypress Project Uppgift",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Naissus/cypress-framework2.git"
+  },
+  "keywords": [
+    "Test",
+    "Cypress",
+    "automation",
+    "e2e",
+    "tests",
+    "frameworks"
+  ],
+  "author": "Dusan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Naissus/cypress-framework2/issues"
+  },
+  "homepage": "https://github.com/Naissus/cypress-framework2#readme",
+  "devDependencies": {
+    "cypress": "^12.8.1"
+  }
+}
