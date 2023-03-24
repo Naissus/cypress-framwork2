@@ -5,7 +5,7 @@ describe('Search for a computer screen', () => {
     cy.get('.s-result-item').should('have.length.gt', 0)
   })
 })
-describe('Search for computer chairs within a specific price range', () => {
+describe('Search for computer chair within a specific price range', () => {
   it('Visits Amazon and searches for computer chair within a specific price range', () => {
     cy.visit('https://www.amazon.com/')
     cy.get('#twotabsearchtextbox').type('computer chair')
