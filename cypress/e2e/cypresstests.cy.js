@@ -11,7 +11,7 @@ describe('Amazon website tests', () => {
     cy.get('#nav-logo-sprites').should('exist');
   });
 
-  it('Displays Amazon search bar', () => {
+  it('Displays Amazon search bar please', () => {
     cy.get('#twotabsearchtextbox').should('exist');
   });
 
