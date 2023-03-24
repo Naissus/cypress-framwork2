@@ -30,7 +30,7 @@ describe('Log in with email and password', () => {
 describe('Change language to German', () => {
   it('Visits Amazon.com and changes the language to German', () => {
     cy.visit('https://www.amazon.com/')
-    cy.get('#icp-nav-flyout').click()
+    cy.get('#icp-nav-flyout', { timeout: 10000}).click()
     cy.contains('Deutsch - DE', { timeout: 10000 }).click()
     cy.get('.a-button-input[type=submit]').click()
     cy.url().should('include', 'https://www.amazon.com/')
