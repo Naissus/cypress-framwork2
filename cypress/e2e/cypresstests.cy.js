@@ -31,15 +31,16 @@ describe('Change language to German', () => {
   it('Visits Amazon.com and changes the language to German', () => {
     cy.visit('https://www.amazon.com/')
     cy.get('#icp-nav-flyout').click()
-    cy.contains('Deutsch - DE').click()
+    cy.contains('Deutsch - DE', { timeout: 10000 }).click()
     cy.get('.a-button-input[type=submit]').click()
     cy.url().should('include', 'https://www.amazon.com/')
   })
 })
 describe('View the cart', () => {
   it('Visits Amazon.com and views the cart', () => {
-    cy.visit('https://www.amazon.com/')
-    cy.get('#nav-cart-count-container').click()
-    cy.url().should('include', '/gp/cart')
+    cy.visit('https://www.amazon.com')
+    cy.get('#nav-cart').click()
+    cy.get('#nav-cart-count-container', { timeout: 10000 }).should('be.visible')
+    cy.url().should('include', '/gp/cart/view.html')
   })
 })
